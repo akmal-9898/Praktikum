@@ -1,0 +1,28 @@
+# manipulasi dan operasi list
+ ------------------------------------------------------------------------------
+# mengubah list
+buah = ['apple','mangga','jeruk','anggur','pisang']
+
+buah.append("semangka")
+print(f"{'buah semangka ditambahkan di ahir' :<50}: {buah}")
+
+buah.insert(3,"durian")
+print(f"{'buah durian ditambahkan diantara jeruk dan anggur' :<50}: {buah}")
+
+buah.remove("mangga")
+print(f"{'buah mangga dihapus dari list' :<50}: {buah}")
+
+buah[4] = "nanas"
+print(f"{'buah pisang diubah menjadi nanas' :<50}: {buah}")
+print(f"{'menampilkan 3 buah pertama' :<50}: {buah[0],buah[1],buah[2]}")
+-------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------
+# mengurutkan list
+angka = [45, 12, 78, 23, 56, 89, 34]
+angka.sort()
+print(f"{'angka setelah diurutkan secara ascending' :<41}: {angka}")
+angka.reverse()
+print(f"{'angka setelah diurutkan secara descending' :<41}: {angka}")
+--------------------------------------------------------------------------------
