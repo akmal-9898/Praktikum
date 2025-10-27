@@ -21,8 +21,10 @@ print(f"{'menampilkan 3 buah pertama' :<50}: {buah[0],buah[1],buah[2]}")
 -------------------------------------------------------------------------------
 # mengurutkan list
 angka = [45, 12, 78, 23, 56, 89, 34]
+
 angka.sort()
 print(f"{'angka setelah diurutkan secara ascending' :<41}: {angka}")
+
 angka.reverse()
 print(f"{'angka setelah diurutkan secara descending' :<41}: {angka}")
 --------------------------------------------------------------------------------
