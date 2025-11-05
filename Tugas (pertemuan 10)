@@ -1,0 +1,29 @@
+# tuple
+# a. Buat sebuah tuple bernama mahasiswa yang berisi data diri anda dengan 3 nilai: (“Nama”, “NIM”,”Prodi”)
+data = ("zidane arrizqi akmal", 2505060054,"teknologi informasi")
+# b. Ubah prodi menjadi “Teknologi Informasi dan Elektro”
+update = data[2] + " dan elektro"
+
+print("NIM :", data[1])
+print("prodi :", update)
+
+# Dictionary:
+# a. Buat dictionary keranjang dengan data: {"apel": 5000, "pisang": 3000, "jeruk": 7000, "anggur": 15000}
+data = {
+    "apel": 5000, 
+    "pisang": 3000, 
+    "jeruk": 7000, 
+    "anggur": 15000
+}
+
+# b. Gunakan perulangan untuk menghitung total harga semua barang
+total = 0
+for v in data.values():
+    total += v
+
+# c. Tampilkan setiap barang dan harganya dalam format: ex: "Harga apel: Rp 5000"
+for key,value in data.items():
+    print(f"Harga {key}: Rp {value}")
+
+# d. Tampilkan harga total belanja
+print("total belanja :", total )
