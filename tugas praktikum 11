@@ -1,0 +1,43 @@
+import datetime
+print(f"{'KEY':<6} {'judul buku':<20} {'penulis':<18} {'tahun terbit':<16} {'tanggal pinjam':<16}")
+print("-"*80)
+variabel_kosong = {}
+key = 0
+while True:
+    input_buku = {
+        "judul buku":input("masukan judul buku :"),
+        "penulis":input("masukan penulis :"),
+        "tahun":datetime.datetime(1111,1,1),
+        "tanggal pinjam":datetime.datetime(1111,1,11)
+    }
+    input_buku["tahun"] = int(input("masukan tahun terbit :(YYYY)"))
+    input_buku["tanggal pinjam"] = int(input("masukan tanggal terahir pinjam :(DD)"))
+    keputusan = input("tambah buku ? [y/t]")
+    if keputusan == "y":
+        variabel_kosong[key] = input_buku
+        key += 1
+        j = input_buku["judul buku"]
+        p = input_buku["penulis"]
+        t = input_buku["tahun"]
+        tp = input_buku["tanggal pinjam"]
+        print(f"{key:<6} {j:<20} {p:<18} {t:<16} {tp:<1}")
+    elif keputusan == "t":
+        variabel_kosong[key] = input_buku
+        key += 1
+        j = input_buku["judul buku"]
+        p = input_buku["penulis"]
+        t = input_buku["tahun"]
+        tp = input_buku["tanggal pinjam"]
+        print(f"{key:<6} {j:<20} {p:<18} {t:<16} {tp:<1}")
+        break
+print("-"*65)
+status = input("apakah anda ingin mencari buku ? (y/t)")
+if status == "y":
+    pencarian = input("masukkan judul buku")
+    sementara = pencarian in input_buku["judul buku"]
+    if sementara == True:
+        stat = "tersedia"
+    elif sementara == False:
+        stat = "tidak tersedia"
+    print(f"{'buku dengan judul':<18}: {pencarian}")
+    print(f"{'status':<18}: {stat}")
