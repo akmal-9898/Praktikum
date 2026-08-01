@@ -1,5 +1,5 @@
 ##  Learning Simple Programming Algorithms
-### This code is part of the learning process to understand the most basic algorithms.
+This code is part of the learning process to understand the most basic algorithms.
 
 
 ----
